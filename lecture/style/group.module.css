@@ -1,0 +1,13 @@
+@media print {
+    .group {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .right {
+        margin-bottom: 0 !important;
+    }
+}
+
+.right {
+    margin-bottom: 1px;
+}

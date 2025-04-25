@@ -1,0 +1,22 @@
+.printTabList {
+    display: none;
+}
+
+.screenTabList {
+    display: block;
+}
+
+@media print {
+    .tab {
+        display: block;
+    }
+
+    .printTabList {
+        display: block;
+    }
+
+    .screenTabList {
+        display: none;
+    }
+}
+

@@ -1,0 +1,32 @@
+@media print {
+    body {
+        background-color: white;
+    }
+    .mainContent
+    {
+        position: relative;
+        top: 0;
+        padding-bottom: 0;
+    }
+    .bottomNavigation {
+        display: none;
+    }
+    .hideInPrint {
+        display: none !important;
+    }
+    .mainContent {
+        top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+}
+
+.app {
+    font-family: -apple-system, Roboto, sans-serif, serif;
+}
+
+.mainContent
+{
+    position: relative;
+    top: 62px;
+    padding-bottom: 62px;
+}

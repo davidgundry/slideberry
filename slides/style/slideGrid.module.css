@@ -1,0 +1,11 @@
+.slideGrid {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 100%;
+}
+
+.slideGrid > * {
+    width: calc(100% / 3);
+    aspect-ratio: 1.777;
+}

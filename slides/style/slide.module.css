@@ -1,0 +1,32 @@
+.slide {
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    bottom: 0;
+    text-align: left;
+    overflow: auto;
+    scroll-snap-align: start;
+    font-family: -apple-system, Roboto, sans-serif, serif;
+}
+
+@media print {
+    .paper {
+        background-color: white;
+        color: black;
+        break-inside: avoid;
+        border-top: 1px solid white;
+   }
+
+   .slidesOnlySlide {
+        page-break-before: always;
+        break-inside: auto !important;
+        margin:0;
+        border: none;
+        box-shadow: none;
+        padding:0;
+        width: 15.8cm;
+        height: calc(0.56259 * 15.8cm);
+        border-top: none;
+   }
+}
