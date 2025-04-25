@@ -10,9 +10,10 @@ type TopListPageProps =
     pages: Metadata[]
     heading: string
     slug: string
+    children?: React.ReactNode
 }
 
-export const TopListPage = ({pages, heading, slug}: TopListPageProps) => {
+export const TopListPage = ({pages, heading, slug, children}: TopListPageProps) => {
     const metadata = {
         title: heading,
         author: "",
@@ -21,6 +22,7 @@ export const TopListPage = ({pages, heading, slug}: TopListPageProps) => {
     }
     return (
         <SimplePage metadata={metadata}>
+            {children}
             {pages.length > 0 ?
                 <LinkList pages={pages} prefix={"/"+slug+"/"}/> :
                 <Box sx={{padding: 2}}>

@@ -2,7 +2,7 @@ import * as React from "react"
 import Grid from '@mui/material/Grid';
 import { MathContext } from "../pagecontent/math/Math";
 import prefix from 'react-prefixer';
-import { useHeadsObserver } from "../../hooks";
+import { useHeadsObserver } from "../hooks";
 import TableOfContents from "./TableOfContents";
 import { HeadingData } from "./useHeadings";
 import * as lectureStyles from "./style/lecture.module.css";

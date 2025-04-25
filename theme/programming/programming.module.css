@@ -16,6 +16,10 @@
     justify-content:space-between
 }
 
+.common code {
+    font-size: 95%;
+}
+
 .common {
     background-color: white;
     color: black;
@@ -151,7 +155,7 @@
 }
 
 .title, .sectionHead {
-    background-image: url(./images/pexels-guduru-ajay-bhargav-1044302.jpg);
+    background-image: url("/theme/programming/main-image.jpg");
     background-color: white;
     color: black
 }

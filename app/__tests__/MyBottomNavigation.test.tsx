@@ -15,7 +15,7 @@ describe("MyBottomNavigation", () => {
   })
 
   test("Shows nothing if only one link defined", () => {
-    const { getByTestId } = render(<div data-testid="container"><MyBottomNavigation links={["lecture"]} pageType="lectures" /></div>)
+    const { getByTestId } = render(<div data-testid="container"><MyBottomNavigation links={["lectures"]} pageType="lectures" /></div>)
     expect(getByTestId('container')).toBeEmptyDOMElement()
   })
 
