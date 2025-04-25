@@ -17,9 +17,10 @@ type TitleSlideProps =
     children?: React.ReactNode
     practical?: boolean
     demo?: boolean
+    image?: string
 }
 
-export const TitleSlide = ({metadata, children, practical, demo}: TitleSlideProps) =>
+export const TitleSlide = ({metadata, children, practical, demo, image}: TitleSlideProps) =>
 {
     const [qrCode, setQRCode] = React.useState<string>()
 
@@ -28,6 +29,10 @@ export const TitleSlide = ({metadata, children, practical, demo}: TitleSlideProp
     {
         setQRCode(href);
     })
+
+    const style: React.CSSProperties = {};
+    if (image) 
+        style["backgroundImage"] = `url(${image})`;
 
     return (
         <BaseSlide styles={[styles.title, styles.common]} fontScale={fontScale}>
@@ -50,9 +55,13 @@ export const TitleSlide = ({metadata, children, practical, demo}: TitleSlideProp
         </BaseSlide>);
 }
 
-export const HeadSlide = ({children} : {children: React.ReactNode}) =>
+export const HeadSlide = ({children, image} : {children: React.ReactNode, image?: string}) =>
 {
-    return <BaseSlide styles={[styles.sectionHead, styles.common]} fontScale={fontScale}>
+    const style: React.CSSProperties = {};
+    if (image) 
+        style["backgroundImage"] = `url(${image})`;
+
+    return <BaseSlide styles={[styles.sectionHead, styles.common]} style={style} fontScale={fontScale}>
         {children}
     </BaseSlide>
 }

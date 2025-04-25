@@ -33,7 +33,7 @@ test("If pageType practical, back arrow goes to /practicals/", () => {
 
 test("If pageType is assessment, back arrow goes to /assessment/", () => {
     const metadata= {title:"",author:"",slug:"",summary:"" }
-    const { queryByTestId } = render(<App metadata={metadata} pageType="assessment"> </App>)
+    const { queryByTestId } = render(<App metadata={metadata} pageType="assessments"> </App>)
     expect((queryByTestId("appBarLink") as HTMLAnchorElement).href).toBe("http://localhost/assessment/");
 })
   
