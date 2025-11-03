@@ -185,7 +185,7 @@ tr:nth-child(odd) th {background: #D6EAE9}
     
 }
 .sectionTypeQuestion {
-    
+    a { color: white }
 }
 .sectionTypeChallenge {
     
