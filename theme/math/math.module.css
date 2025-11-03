@@ -159,6 +159,7 @@
 .title .right, .sectionHead > div {
     margin: 0;
     position: absolute;
+    max-width: 52%;
     top: 50%;
     transform: translateY(-50%);
 }
