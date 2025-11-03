@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&family=Raleway:wght@300&display=swap');
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between
+}
+
+.common {
+    background-color: #112f51;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Raleway', sans-serif;
+    overflow: hidden;
+}
+
+.common ul, .common ol, .common p {
+    line-height: 1.8;
+    margin: 0.2em;
+}
+
+.common h1, .common h2, .common h3 {
+    font-family: 'Open Sans', sans-serif;
+    color: #eee;
+    margin: 0.25 0 1em 0;
+    padding: 0 0 0.25em 0; 
+    font-weight: normal;
+    text-align: center;
+}
+
+.common h4 {
+    margin: 1em 0 0.5em 0;
+    color: white;
+    text-align: left;
+}
+
+.common ul, .common ol  {
+    padding-left: 1.5em;
+}
+
+.common li {
+    padding-left: 0.5em;
+}
+
+.common pre {
+    padding: 0.5em 1.5em;
+}
+
+.common blockquote {
+    margin: 1em 2em 1em 5em;
+}
+
+.normal {
+    padding-top: 1em;
+    padding-right: 2em;
+    padding-left: 2em;
+}
+
+.normal, .centre, .title, .sectionHead, .full {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.sectionHead > div {
+    padding-left: 2em
+}
+
+.full > div {
+    text-align: center;
+}
+
+.centre > header {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    height: 20%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.centre > header h1, .centre > header h2, .centre > header h3, .centre > header h4 {
+    margin: 0;
+}
+
+.centre > main {
+    position: absolute;
+    top:20%;
+    left:0;
+    right:0;
+    bottom:10%;
+    height: 70%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.centre > footer {
+    position: absolute;
+    top:90%;
+    left:0;
+    right:0;
+    bottom:0;
+    height: 10%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70%;
+    flex-direction: column;
+}
+
+.title, .sectionHead {
+    background-image: url(./images/curves-by-gdtography.jpg);
+    background-color: white;
+    color: black
+}
+
+.title .qrCode {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1em;
+    padding: 1.5em;
+    height: 50%;
+    max-height: 50%;
+    width: auto;
+    max-width: auto;
+    aspect-ratio: 1;
+    background-color: white;
+    font-size: 60%;
+}
+
+.title .right, .sectionHead > div {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.title .right {
+    text-align: right;
+    right:0;
+    padding-right: 1em;
+    font-size: 80%;
+}
+
+.title h1, .title h2, .title h3, .title p, .sectionHead h1, .sectionHead h2, .sectionHead h3, .sectionHead p {
+    display: inline-block;
+    text-align: right;
+    margin: 0;
+    border: none;
+    color: #333;
+}
+
+.title .right, .sectionHead > div {
+    background-color: white;
+    color: #333;
+    border-bottom: 0.5em solid  #112f51;
+    padding: 2em;
+}
+
+.sectionHead > div {
+    margin-top: 10%;
+    min-width: 66%;
+}
