@@ -175,6 +175,22 @@ tr:nth-child(odd) th {background: #D6EAE9}
     max-width: calc(100% - 16px);
 }
 
+.sectionTypeDefault {
+
+}
+.sectionTypeAside {
+    a { color: white }
+}
+.sectionTypeExample {
+    
+}
+.sectionTypeQuestion {
+    
+}
+.sectionTypeChallenge {
+    
+}
+
 @media print {
     .contentGrid{
         margin: 0;
