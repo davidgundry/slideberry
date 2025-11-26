@@ -34,8 +34,21 @@ export const Section = ({children, h1, h2, h3, h4, type, hideCheck, hideInNav, m
     const heading: string = h1|| h2 || h3 || h4 || "";
     const slug = sectionSluggify(heading)
 
+    const classNames = [lectureStyles.paperSection]
+    if (type === "section")
+        classNames.push(lectureStyles.sectionTypeDefault);
+    else if (type === "aside")
+        classNames.push(lectureStyles.sectionTypeAside);
+    else if (type === "example")
+        classNames.push(lectureStyles.sectionTypeExample);
+    else if (type === "question")
+        classNames.push(lectureStyles.sectionTypeQuestion);
+    else if (type === "challenge")
+        classNames.push(lectureStyles.sectionTypeChallenge);
+
+
     return <>
-        <Paper className={lectureStyles.paperSection} sx={{
+        <Paper className={classNames.join(" ")} sx={{
                 flexGrow: 1,
                 backgroundColor: typeBackgroundColour(type),
                 color: typeColour(type),
