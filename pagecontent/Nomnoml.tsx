@@ -1,4 +1,4 @@
-import { ScriptStatus, useScript } from '@custom-react-hooks/use-script';
+import useScript, { ScriptStatus } from '@custom-react-hooks/use-script';
 import * as React  from 'react'
 import { Helmet } from 'react-helmet';
 
