@@ -18,7 +18,7 @@ Slideberry has been used for 6 courses so far. To see some examples of how it ca
 
 * [Mathematics and Problem Solving](https://mathematicsandproblemsolving.netlify.app/)
 * [Programming 04](https://programming04.netlify.app/)
-* [Slideberry Template](slideberry.netlify.app) (see [the repository](https://github.com/davidgundry/slideberry-template) on GitHub)
+* [Slideberry Template](https://slideberry.netlify.app) (see [the repository](https://github.com/davidgundry/slideberry-template) on GitHub)
 
 ## Usage
 
